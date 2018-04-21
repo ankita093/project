@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.ankita.project.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:id="@+id/TFusername"
+        android:layout_below="@+id/logo"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="USERNAME"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_action_user" />
+    <EditText
+        android:id="@+id/TFpassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="PASSWORD"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/TFusername"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:inputType="textPassword"  />
+    <Button
+        android:id="@+id/blogin"
+        android:onClick="onclick"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TFpassword"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="50dp"
+        android:text="LOGIN"
+        android:background="@color/btncolor"
+        android:textColor="@color/btntextcolor"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="167dp" />
+    <Button
+        android:id="@+id/bsignup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blogin"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@color/btncolor"
+        android:textColor="@color/btntextcolor"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="SIGN UP HERE"
+        android:onClick="onclick"  />
+
+    <Button
+        android:id="@+id/btnAdmin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bsignup"
+        android:layout_centerHorizontal="true"
+        android:text="ADMIN LOGIN"
+        android:textColor="@color/btntextcolor"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:background="@color/btncolor"
+        android:textStyle="bold"
+        android:onClick="onclick"/>
+
+</RelativeLayout>
+

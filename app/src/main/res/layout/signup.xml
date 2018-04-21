@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:text="REGISTER HERE"
+        android:textSize="40sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/TFname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/head"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:hint="NAME" />
+
+    <EditText
+        android:id="@+id/TFemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/TFname"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="EMAIL"
+        android:inputType="textEmailAddress"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/TFuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/TFemail"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:ems="10"
+        android:hint="USER NAME"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+
+
+    <EditText
+        android:id="@+id/TFpass1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/TFuname"
+        android:hint="PASSWORD"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/TFpass2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TFpass1"
+        android:hint="CONFIRM PASSWORD"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/bsignupbutton"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TFpass2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/btntextcolor"
+        android:background="@color/btncolor"
+        android:text="SIGN UP"
+        android:onClick="onsignupclick"/>
+
+</RelativeLayout>

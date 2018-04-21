@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+<TextView
+    android:id="@+id/head2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="UPDATE ITEM"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="10dp"
+    android:textStyle="bold"
+    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+    android:textSize="40sp"
+     />
+
+    <EditText
+        android:id="@+id/itemid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="ITEM ID"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/itemcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemid"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="ITEM CATEGORY"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/itemcategory"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="ITEM NAME"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/itemqty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemname"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:hint="ITEM QUANTITY"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/itemprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemqty"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:hint="ITEM PRICE"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemprice"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:text="SUBMIT"
+        android:textColor="@color/btntextcolor"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:background="@color/btncolor"
+        android:onClick="onadminsubmit"/>
+
+</RelativeLayout>

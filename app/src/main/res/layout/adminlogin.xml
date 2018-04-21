@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:text="ADMIN LOGIN"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/adminusername"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/head"
+        android:layout_marginEnd="48dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="62dp"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="USER NAME"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/adminpass"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/adminusername"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnloginadmin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="87dp"
+        android:text="LOGIN"
+        android:textColor="@color/btntextcolor"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:background="@color/btncolor"
+        android:onClick="onclick"/>
+
+
+</RelativeLayout>
