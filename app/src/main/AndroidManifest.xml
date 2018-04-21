@@ -19,6 +19,7 @@
         <activity android:name=".dashboard"></activity>
         <activity android:name=".signup"></activity>
         <activity android:name=".adminlogin"></activity>
+        <activity android:name=".admindashboard"></activity>
     </application>
 
 </manifest>

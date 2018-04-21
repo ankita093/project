@@ -19,9 +19,9 @@ public class adminlogin extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.adminlogin);
     }
-    public void onadminsubmit (View v)
+    public void onclick (View v)
     {
-        if (v.getId() == R.id.btnAdmin)
+        if (v.getId() == R.id.btnloginadmin)
         {
             EditText a = (EditText)findViewById(R.id.adminusername);
             String str = a.getText().toString();
